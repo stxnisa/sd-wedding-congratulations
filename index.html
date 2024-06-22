@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Selamat Menikah!</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    </head>    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Menikah!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
 <body>
     <div class="background"></div>
-    <div class="container">
+    
+    <div class="countdown-container">
+        <div id="countdown">
+            <h1>Countdown to Release</h1>
+            <div id="time">
+                <span id="days"></span> Days
+                <span id="hours"></span> Hours
+                <span id="minutes"></span> Minutes
+                <span id="seconds"></span> Seconds
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="main-content" style="display:none;">
         <div class="banner">
             <img src="img/banner.jpg" alt="Banner Foto Calon Pengantin">
         </div>
@@ -20,11 +33,11 @@
         <div class="profiles">
             <div class="profile">
                 <img src="img/groom.png" alt="Foto Pengantin Pria">
-                <p>Dadang Hariadi</p>
+                <p class="handwriting-name">Dadang Hariadi</p>
             </div>
             <div class="profile">
                 <img src="img/bride.png" alt="Foto Pengantin Wanita">
-                <p>Sekarnida Salsabila</p>
+                <p class="handwriting-name">Sekarnida Salsabila</p>
             </div>
         </div>
         <div class="letter">
@@ -46,5 +59,7 @@
             <p>Background oleh Weddingbee</p>
         </div>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>

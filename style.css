@@ -61,6 +61,13 @@ h1 {
     margin: 20px 0;
 }
 
+/* Tambahkan gaya untuk nama pengantin */
+.handwriting-name {
+    font-family: 'Great Vibes', cursive; /* Menggunakan font handwriting yang berbeda */
+    font-size: 1.5em;
+    color: #333;
+}
+
 .profiles {
     display: flex;
     justify-content: space-around;
@@ -116,4 +123,30 @@ h1 {
     .letter {
         font-size: 0.9em;
     }
+}
+
+/* Tambahkan gaya untuk countdown */
+.countdown-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    z-index: 1;
+}
+
+#countdown {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#time {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5em;
+    margin-top: 10px;
 }
