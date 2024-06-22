@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Ubah dari center ke flex-start untuk memastikan konten dimulai dari atas */
+    align-items: flex-start;
     min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
     position: relative;
-    overflow-x: hidden; /* Hanya sembunyikan overflow horizontal */
+    overflow-x: hidden;
 }
 
 .background {
@@ -55,15 +55,14 @@ h1 {
 }
 
 .weddingtulation {
-    font-family: 'Dancing Script', cursive; /* Menggunakan font handwriting */
+    font-family: 'Dancing Script', cursive;
     font-size: 2em;
     color: #333;
     margin: 20px 0;
 }
 
-/* Tambahkan gaya untuk nama pengantin */
 .handwriting-name {
-    font-family: 'Great Vibes', cursive; /* Menggunakan font handwriting yang berbeda */
+    font-family: 'Great Vibes', cursive;
     font-size: 1.5em;
     color: #333;
 }
@@ -114,18 +113,6 @@ h1 {
     margin: 5px 0;
 }
 
-@media (max-width: 600px) {
-    .profile img {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .letter {
-        font-size: 0.9em;
-    }
-}
-
-/* Tambahkan gaya untuk countdown */
 .countdown-container {
     text-align: center;
     padding: 20px;
@@ -149,4 +136,43 @@ h1 {
     gap: 10px;
     font-size: 1.5em;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .handwriting-name {
+        font-size: 1.2em;
+    }
+
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .letter {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .handwriting-name {
+        font-size: 1em;
+    }
+
+    .profile img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .letter {
+        font-size: 0.8em;
+    }
+
+    .weddingtulation {
+        font-size: 1.5em;
+    }
+
+    #time {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
