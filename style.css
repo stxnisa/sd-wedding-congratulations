@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; /* Ubah dari center ke flex-start untuk memastikan konten dimulai dari atas */
     min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
     position: relative;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Hanya sembunyikan overflow horizontal */
 }
 
 .background {
@@ -55,14 +55,14 @@ h1 {
 }
 
 .weddingtulation {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive; /* Menggunakan font handwriting */
     font-size: 2em;
     color: #333;
     margin: 20px 0;
 }
 
 .handwriting-name {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', cursive; /* Menggunakan font handwriting yang berbeda */
     font-size: 1.5em;
     color: #333;
 }
